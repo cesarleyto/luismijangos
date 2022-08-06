@@ -594,8 +594,8 @@ a:hover {
   color: #fdfcfa;
 }
 /* Scroll to top button*/
-.scrollToTop_wraper {
-  display: none;
+#scrollToTop a {
+  border-radius: 100px;
 }
 .form-control {
   font-family: 'Raleway', sans-serif;
@@ -707,16 +707,51 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-tdFE5NlvOT {
-  background-image: url("../../../assets/images/img-3720-2000x1333.jpg");
+.cid-tdL63pqyVz {
+  display: flex;
+  background-image: url("../../../assets/images/portada-2000x1125.jpg");
 }
-.cid-tdFE5NlvOT .mbr-section-title {
-  color: #ffffff;
+.cid-tdL63pqyVz .mbr-overlay {
+  background-color: #353535;
+  opacity: 0.5;
+}
+.cid-tdL63pqyVz .content-wrap {
+  padding: 5rem 1rem;
+}
+@media (min-width: 768px) {
+  .cid-tdL63pqyVz {
+    align-items: flex-end;
+  }
+  .cid-tdL63pqyVz .row {
+    justify-content: center;
+  }
+  .cid-tdL63pqyVz .content-wrap {
+    width: 40%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-tdL63pqyVz .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-tdL63pqyVz {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-tdL63pqyVz .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-tdL63pqyVz .content-wrap {
+    width: 100%;
+  }
+}
+.cid-tdL63pqyVz .mbr-text,
+.cid-tdL63pqyVz .mbr-section-btn {
   text-align: center;
 }
-.cid-tdFE5NlvOT .mbr-text,
-.cid-tdFE5NlvOT .mbr-section-btn {
-  color: #ffffff;
+.cid-tdL63pqyVz .mbr-section-title {
   text-align: center;
 }
 .cid-tdFDV8pVPq {
@@ -852,6 +887,12 @@ a {
     padding-left: 2rem;
     padding-right: 4rem;
   }
+}
+.cid-tdFSqtgwbG .card-title {
+  text-align: left;
+}
+.cid-tdFSqtgwbG .card-subtitle {
+  text-align: left;
 }
 .cid-t7ym9mZ2qk {
   z-index: 1000;
@@ -992,7 +1033,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-t7ym9mZ2qk .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 5rem);
+    max-height: calc(98.5vh - 5.5rem);
   }
 }
 .cid-t7ym9mZ2qk .navbar.collapsed .dropdown-menu .dropdown-submenu {
